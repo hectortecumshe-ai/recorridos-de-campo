@@ -1,0 +1,47 @@
+{
+  "title": "Recorrido SOMEXA 2026: guía de campo para celular del recorrido por zonas tropicales de agricultura agroecológica (IV Congreso Mexicano de Agroecología 2026)",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "cc-by-4.0",
+  "language": "spa",
+  "creators": [
+    {
+      "name": "Mojica-Zárate, Héctor Tecumshé",
+      "orcid": "0000-0002-9067-3983"
+    },
+    {
+      "name": "Partida-Sedas, José Gervasio"
+    },
+    {
+      "name": "Alejo-Bello, Sergio"
+    },
+    {
+      "name": "Rojas-Reyes, José Orlando"
+    }
+  ],
+  "description": "Aplicación web progresiva (PWA) de guía de campo para el recorrido del IV Congreso Mexicano de Agroecología 2026 («Ciencia y saber campesino para construir soberanía alimentaria y energética»), realizado el sábado 14 de noviembre de 2026 desde el Centro Académico Regional de la Universidad Autónoma Chapingo en Huatusco, Veracruz, por cuatro sitios de observación: Mata de Zarza y Hato de la Higuera (Puente Nacional) y El Coyol y Paso Pimienta (Comapa). Incluye mapa en 3D con el relieve real (SRTM 30 m), mapa de la ruta, perfil altitudinal con franjas de vegetación, caracterización natural de cada sitio (clima, vegetación, suelo y paisaje), perfil agroecológico con los diez elementos de la agroecología de la FAO, punto de análisis, lista de observación, alternativas desde la sostenibilidad, y cultivos, fauna y vegetación existente. Funciona sin conexión a internet una vez abierta (service worker) y se puede instalar en el teléfono; incluye además una versión en un solo archivo HTML para compartir.",
+  "keywords": [
+    "agroecología",
+    "guía de campo",
+    "recorrido de campo",
+    "aplicación web progresiva",
+    "PWA",
+    "soberanía alimentaria",
+    "trópico",
+    "Veracruz",
+    "vid",
+    "guanábana",
+    "queso jarocho",
+    "maíz criollo",
+    "nixtamalización",
+    "perfil altitudinal",
+    "SOMEXA"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://hectortecumshe-ai.github.io/recorridos-de-campo/somexa-2026/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

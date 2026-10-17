@@ -9,4 +9,10 @@ y funciona sin internet: al abrirlo una vez, el navegador lo guarda en el teléf
 
 Cada carpeta incluye además un archivo `.html` único con todo incrustado, para compartirlo y abrirlo sin conexión.
 
-Dr. Héctor Tecumshé Mojica Zárate · Universidad Autónoma Chapingo
+Héctor Tecumshé Mojica-Zárate, José Gervasio Partida-Sedas, Sergio Alejo-Bello, José Orlando Rojas-Reyes · Universidad Autónoma Chapingo
+
+## Cómo citar
+
+Mojica-Zárate, H. T.; Partida-Sedas, J. G.; Alejo-Bello, S.; Rojas-Reyes, J. O. (2026). Recorrido SOMEXA 2026: guía de campo para celular del recorrido por zonas tropicales de agricultura agroecológica (IV Congreso Mexicano de Agroecología 2026) (versión 1.0.0). Universidad Autónoma Chapingo.
+
+Licencia: CC BY 4.0 (ver `LICENSE`).
