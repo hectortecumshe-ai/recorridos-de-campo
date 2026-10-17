@@ -13,6 +13,6 @@ Héctor Tecumshé Mojica-Zárate, José Gervasio Partida-Sedas, Sergio Alejo-Bel
 
 ## Cómo citar
 
-Mojica-Zárate, H. T.; Partida-Sedas, J. G.; Alejo-Bello, S.; Rojas-Reyes, J. O. (2026). Recorrido SOMEXA 2026: guía de campo para celular del recorrido por zonas tropicales de agricultura agroecológica (IV Congreso Mexicano de Agroecología 2026) (versión 1.0.0). Universidad Autónoma Chapingo.
+Mojica-Zárate, H. T.; Partida-Sedas, J. G.; Alejo-Bello, S.; Rojas-Reyes, J. O. (2026). Recorrido SOMEXA 2026: guía de campo para celular del recorrido por zonas tropicales de agricultura agroecológica (IV Congreso Mexicano de Agroecología 2026) (versión 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23433293
 
 Licencia: CC BY 4.0 (ver `LICENSE`).
