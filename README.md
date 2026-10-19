@@ -6,12 +6,13 @@ y funciona sin internet: al abrirlo una vez, el navegador lo guarda en el teléf
 | Recorrido | Fecha | Carpeta |
 |---|---|---|
 | Recorrido SOMEXA 2026 · IV Congreso Mexicano de Agroecología 2026 | Sábado 14 de noviembre de 2026 | [`somexa-2026/`](somexa-2026/) |
+| Viaje Generacional de Estudios · Viaje de Estudio Integrador I · Propedéutico grupo 21 | 26 de noviembre al 4 de diciembre de 2026 | [`propedeutico-21-2026/`](propedeutico-21-2026/) |
 
 Cada carpeta incluye además un archivo `.html` único con todo incrustado, para compartirlo y abrirlo sin conexión.
 
 Héctor Tecumshé Mojica-Zárate, José Gervasio Partida-Sedas, Sergio Alejo-Bello, José Orlando Rojas-Reyes · Universidad Autónoma Chapingo
 
-## Cómo citar
+## Cómo citar el Recorrido SOMEXA 2026
 
 Mojica-Zárate, H. T.; Partida-Sedas, J. G.; Alejo-Bello, S.; Rojas-Reyes, J. O. (2026). Recorrido SOMEXA 2026: guía de campo para celular del recorrido por zonas tropicales de agricultura agroecológica (IV Congreso Mexicano de Agroecología 2026) (versión 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23433293
 
