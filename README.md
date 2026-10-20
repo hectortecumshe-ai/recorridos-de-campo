@@ -6,7 +6,7 @@ y funciona sin internet: al abrirlo una vez, el navegador lo guarda en el teléf
 | Recorrido | Fecha | Carpeta |
 |---|---|---|
 | Recorrido SOMEXA 2026 · IV Congreso Mexicano de Agroecología 2026 | Sábado 14 de noviembre de 2026 | [`somexa-2026/`](somexa-2026/) |
-| Viaje Generacional de Estudios · Viaje de Estudio Integrador I · Propedéutico grupo 21 | 26 de noviembre al 4 de diciembre de 2026 | [`propedeutico-21-2026/`](propedeutico-21-2026/) |
+| Viaje Generacional de Estudios · Viaje de Estudio Integrador I · Propedéutico grupo 21 (guía de Héctor Tecumshé Mojica Zárate) | 26 de noviembre al 4 de diciembre de 2026 | [`propedeutico-21-2026/`](propedeutico-21-2026/) |
 
 Cada carpeta incluye además un archivo `.html` único con todo incrustado, para compartirlo y abrirlo sin conexión.
 
