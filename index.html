@@ -2,55 +2,81 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#1b2618">
-<title>Recorridos de Campo</title>
-<link rel="icon" href="somexa-2026/icono-192.png" type="image/png">
-<link rel="stylesheet" href="somexa-2026/vendor/fuentes/fuentes.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Puerta de entrada a las familias de guías de campo: Recorridos SOMEXA y Viajes de estudio propedéutico.">
+<meta name="author" content="Héctor Tecumshé Mojica Zárate">
+<meta name="theme-color" content="#2f3277">
+<title>Recorridos de campo</title>
+<link rel="icon" href="https://hectortecumshe-ai.github.io/recorridos-somexa/2026-ruta-2/icono-192.png" type="image/png">
 <style>
-:root { --bg: #f3f2ea; --surface: #fbfbf6; --ink: #1b2618; --muted: #5b6656; --line: #d9dacb; --accent: #a63d24; --verde: #3e6b3a;
-  --font-display: "Bricolage Grotesque", "Archivo", system-ui, sans-serif; --font-body: "Archivo", system-ui, sans-serif; color-scheme: light }
-@media (prefers-color-scheme: dark) { :root { --bg: #141a12; --surface: #1c241a; --ink: #e8ecdf; --muted: #a3ad9b; --line: #33402f;
-  --accent: #e0785a; --verde: #9cc98f; color-scheme: dark } }
+/* Layout: portada de familia; una tarjeta por guía, luego la estrategia, la familia Ratio y los créditos */
+:root { --fondo: #eceff4; --hoja: #fbfcfd; --tinta: #1b2333; --gris: #586274; --linea: #d8dde7; --acento: #3d3f8f; --oro: #a8741a; --banda: linear-gradient(160deg, #2f3277, #3b3f8a 50%, #4d6a3a); --serif: "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", P052, Georgia, serif; color-scheme: light }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --fondo: #0f121b; --hoja: #171b28; --tinta: #e9ecf3; --gris: #a5adbd; --linea: #2b3142; --acento: #a7abf2; --oro: #e2b25a; --banda: linear-gradient(160deg, #23265a, #2c2f68 50%, #34492a); color-scheme: dark } }
+:root[data-theme="dark"] { --fondo: #0f121b; --hoja: #171b28; --tinta: #e9ecf3; --gris: #a5adbd; --linea: #2b3142; --acento: #a7abf2; --oro: #e2b25a; --banda: linear-gradient(160deg, #23265a, #2c2f68 50%, #34492a); color-scheme: dark }
 * { box-sizing: border-box }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--font-body); padding-inline: 16px; padding-block: 40px }
-main { max-width: 720px; margin: 0 auto; display: grid; gap: 24px }
-h1, h2 { font-family: var(--font-display); margin: 0; line-height: 1.1; text-wrap: balance }
-h1 { font-size: clamp(1.8rem, 7vw, 2.6rem) }
-.eyebrow { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--accent); margin: 0 }
+body { margin: 0; background: var(--fondo); color: var(--tinta); font: 17px/1.6 var(--serif); padding-inline: 16px; padding-block: 0 48px }
+main { max-width: 780px; margin: 0 auto; display: grid; gap: 30px }
+h1, h2, h3 { margin: 0; line-height: 1.14; text-wrap: balance }
+h1 { font-size: clamp(2.2rem, 9vw, 3.2rem); letter-spacing: -.015em }
+h2 { font-size: 1.45rem } h3 { font-size: 1.2rem }
 p { margin: 0 }
-.muted { color: var(--muted) }
-a.tarjeta { display: grid; grid-template-columns: 72px 1fr; gap: 16px; align-items: center; text-decoration: none; color: inherit;
-  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px }
-a.tarjeta:hover, a.tarjeta:focus-visible { border-color: var(--accent); outline: none }
-a.tarjeta img { width: 72px; height: 72px; border-radius: 16px; background: #f2ebd9 }
-a.tarjeta h2 { font-size: 1.2rem }
-a.tarjeta small { color: var(--verde); font-weight: 700 }
-footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px }
+a { color: var(--acento) }
+.versalita { font-variant: small-caps; text-transform: lowercase; letter-spacing: .08em; font-weight: 700; color: var(--oro) }
+.gris { color: var(--gris) }
+header.portada { position: relative; overflow: hidden; isolation: isolate; margin-inline: -16px; padding: 34px 20px 30px; display: grid; gap: 14px;
+  background: var(--banda); color: #f5f6fb; border-radius: 0 0 26px 26px }
+header.portada::before { content: ""; position: absolute; inset: -30%; z-index: -1; background: radial-gradient(40% 30% at 30% 70%, rgb(255 255 255 / .16), transparent 70%),
+  radial-gradient(35% 25% at 75% 30%, rgb(255 255 255 / .12), transparent 70%) }
+@media (prefers-reduced-motion: no-preference) {
+  header.portada::before { animation: niebla 20s ease-in-out infinite alternate }
+  .tarjeta { animation: entra .7s cubic-bezier(.2,.7,.2,1) both } .tarjeta:nth-of-type(2) { animation-delay: .12s }
+  .tarjeta { transition: transform .3s, box-shadow .3s } .tarjeta:hover { transform: translateY(-3px) } }
+@keyframes niebla { from { transform: translateX(-10%) } to { transform: translateX(10%) } }
+@keyframes entra { from { opacity: 0; transform: translateY(14px) } to { opacity: 1; transform: none } }
+header.portada .versalita { color: #f3d79b } header.portada p { color: #e3e6f2 }
+.tarjetas { display: grid; gap: 16px }
+.tarjeta { display: grid; grid-template-columns: 84px 1fr; gap: 16px; align-items: start; background: var(--hoja); border: 1px solid var(--linea); border-radius: 18px;
+  padding: 18px; box-shadow: 0 1px 2px rgb(0 0 0 / .05), 0 10px 26px rgb(0 0 0 / .06) }
+.tarjeta img { width: 84px; height: 84px; border-radius: 18px; background: #fff; object-fit: contain }
+.tarjeta .cuerpo { display: grid; gap: 6px; min-width: 0 }
+.botones { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px }
+.btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--linea); border-radius: 12px; padding: 8px 13px; text-decoration: none; color: var(--tinta);
+  background: var(--fondo); font-size: .93rem }
+.btn.prim { background: var(--acento); border-color: var(--acento); color: #fff }
+.doi { font-size: .82rem; color: var(--gris) }
+.bloque { background: var(--hoja); border: 1px solid var(--linea); border-radius: 18px; padding: 18px; display: grid; gap: 10px }
+ol.pasos { margin: 0; padding-left: 1.3em; display: grid; gap: 6px }
+.proximo { border: 2px dashed var(--linea); border-radius: 18px; padding: 16px; color: var(--gris); text-align: center }
+footer { font-size: .86rem; color: var(--gris); border-top: 1px solid var(--linea); padding-top: 14px; display: grid; gap: 6px }
+@media (max-width: 460px) { .tarjeta { grid-template-columns: 1fr } .tarjeta img { width: 68px; height: 68px } }
+:root { --linea-ratio: var(--linea); --acento-ratio: var(--oro) }
+
+.ratio-sec { display: grid; gap: 12px }
+.familia-ratio { display: grid; gap: 6px; border-top: 1px solid var(--linea-ratio, rgb(127 127 127 / .3)); padding-top: 12px }
+.familia-ratio h3 { margin: 0 }
+.lema-ratio { font-style: italic; opacity: .8 }
+.apps-ratio { margin: 0; padding-left: 1.1em; display: grid; gap: 6px }
+.doi-ratio { font-size: .78em; white-space: nowrap; opacity: .8 }
+.resiliencia-ratio { border-left: 4px solid var(--acento-ratio, currentColor); padding: 6px 0 6px 12px; font-style: italic }
+.qrs-ratio { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center }
+.qrs-ratio figure { margin: 0; display: grid; gap: 6px; justify-items: center; text-align: center; font-size: .9rem }
+.qrs-ratio svg.qr-ratio { width: 132px; height: 132px; border-radius: 10px; border: 1px solid rgb(127 127 127 / .3); background: #fff; padding: 4px }
+
 </style>
 </head>
 <body>
 <main>
-  <header style="display:grid;gap:8px">
-    <p class="eyebrow">Universidad Autónoma Chapingo · Centro Académico Regional Huatusco</p>
+  <header class="portada">
+    <p class="versalita">Universidad Autónoma Chapingo · Centro Académico Regional Huatusco</p>
     <h1>Recorridos de campo</h1>
-    <p class="muted">Guías para celular de salidas de campo y viajes de estudio: mapa 3D, perfil altitudinal,
-      perfil agroecológico e itinerario de cada sitio. Funcionan sin internet una vez abiertas.</p>
+    <p style="font-size:1.12rem">Las guías para celular ahora viven en dos familias</p>
   </header>
-  <a class="tarjeta" href="somexa-2026/">
-    <img src="somexa-2026/icono-192.png" alt="">
-    <div><h2>Recorrido SOMEXA 2026</h2>
-      <p class="muted">IV Congreso Mexicano de Agroecología 2026 · Sábado 14 de noviembre de 2026</p>
-      <small>Mata de Zarza · Hato de la Higuera · El Coyol · Paso Pimienta</small></div>
-  </a>
-  <a class="tarjeta" href="propedeutico-21-2026/">
-    <img src="propedeutico-21-2026/icono-192.png" alt="" style="background:#fff">
-    <div><h2>Viaje Generacional de Estudios · Grupo 21</h2>
-      <p class="muted">Viaje de Estudio Integrador I · Propedéutico · 26 de noviembre al 4 de diciembre de 2026</p>
-      <p class="muted">Guía de viaje de estudio · Dr. Héctor Tecumshé Mojica Zárate</p>
-      <small>Veracruz · Puebla · Tlaxcala · Estado de México · Ciudad de México</small></div>
-  </a>
-  <footer>Universidad Autónoma Chapingo · Centro Académico Regional Huatusco</footer>
+  <section class="tarjetas">
+    <article class="tarjeta"><a href="https://hectortecumshe-ai.github.io/recorridos-somexa/"><img src="https://hectortecumshe-ai.github.io/recorridos-somexa/2026-ruta-2/icono-192.png" alt=""></a><div class="cuerpo"><h3><a href="https://hectortecumshe-ai.github.io/recorridos-somexa/" style="color:inherit;text-decoration:none">Recorridos SOMEXA</a></h3><p>Recorridos de campo del Congreso Mexicano de Agroecología</p><p class="gris" style="font-size:.93rem">Ruta 1 · Mata de Zarza y lomeríos de Veracruz</p><p class="gris" style="font-size:.93rem">Ruta 2 · Ruta de Altura en la sierra de Puebla</p><div class="botones"><a class="btn prim" href="https://hectortecumshe-ai.github.io/recorridos-somexa/">Entrar</a></div></div></article>
+    <article class="tarjeta"><a href="https://hectortecumshe-ai.github.io/viajes-de-estudio-propedeutico/"><img src="https://hectortecumshe-ai.github.io/viajes-de-estudio-propedeutico/2026-grupo-21/icono-192.png" alt=""></a><div class="cuerpo"><h3><a href="https://hectortecumshe-ai.github.io/viajes-de-estudio-propedeutico/" style="color:inherit;text-decoration:none">Viajes de estudio propedéutico</a></h3><p>Una guía por grupo y por semestre</p><p class="gris" style="font-size:.93rem">Grupo 21 · 2026: Viaje Generacional de Estudios</p><div class="botones"><a class="btn prim" href="https://hectortecumshe-ai.github.io/viajes-de-estudio-propedeutico/">Entrar</a></div></div></article>
+  </section>
+  <footer><p>Las direcciones anteriores siguen funcionando: redirigen a la nueva casa de cada guía. La versión 1.0.0 del Recorrido SOMEXA 2026
+    (DOI 10.5281/zenodo.23433293) se conserva en la historia de este repositorio.</p><p>Universidad Autónoma Chapingo · Centro Académico Regional Huatusco</p></footer>
 </main>
 </body>
 </html>
